@@ -146,6 +146,16 @@ html, body {
     display: inline-block;
     text-decoration: white;
 }
+.button-link {
+    text-decoration: none; /* removes underline */
+    display: inline-block; /* ensures it wraps around the button */
+}
+
+.button-link:visited,
+.button-link:hover,
+.button-link:active {
+    color: inherit; /* keeps the text color consistent */
+}
 
 .form-elementcommission button:hover {
     background-color: #ffa4eb; /* Darker shade on hover */
