@@ -274,7 +274,7 @@ html, body {
 }
 
 
-.one-coloumns {
+.one-columns {
     display: flex;
     flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center content */
@@ -282,34 +282,34 @@ html, body {
     width: 100%; /* Full width */
 }
 
-.one-coloumns .card {
+.one-columns .card {
     width: 70%; /* Increase the card width */
     max-width: 600px; /* Allow images to be larger */
     margin-bottom: 20px; /* Reduce space between cards */
 }
 
-.one-coloumns .card-image {
+.one-columns .card-image {
     width: 100%; /* Ensure the image takes up full width */
     max-width: 600px; /* Keep a max width */
     height: auto; /* Maintain aspect ratio */
 }
 
-.one-coloumns .card img {
+.one-columns .card img {
     width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Removes extra spacing */
     border-radius: 10px; /* Optional: rounded corners for style */
 }
 
-.two-coloumns .card {
+.two-columns .card {
     width: calc((100% - 50px) / 2);
 }
 
-.three-coloumns .card {
+.three-columns .card {
     width: calc((100% - 100px) / 3);
 }
 
-.row .two-coloumns{
+.row .two-columns{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
