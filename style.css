@@ -22,6 +22,17 @@ body {
     overflow-y: scroll;  /* Ensure vertical scrolling */
 }
 
+.gallery-header h1 
+{
+    font-size: 3rem;         /* Increase the font size */
+    color: white;            /* Make the text white */
+    text-align: center;      /* Center-align the text */
+    font-weight: bold;       /* Make the text bold */
+    margin-top: 50px;        /* Add some space above the title */
+    margin-bottom: 20px;     /* Add space below the title */
+    letter-spacing: 2px;     /* Slightly increase letter spacing for better readability */
+}
+
 hr {
     /* Removes the default bevel */
     border: none;
@@ -159,6 +170,9 @@ html, body {
 
 .form-elementcommission button:hover {
     background-color: #ddff9d; /* Darker shade on hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+    font-weight: bold;
 }
 
 
@@ -172,100 +186,104 @@ html, body {
     margin-top: 20px;
 }
 
-.card-image {
-    height: 500px;
-    width: 400px;
+.card-image 
+{
+    height: auto;
+    width: 100px;
     overflow: hidden;
     /* crops the extra content */
-
     margin-top: 50px;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.card-image img {
+.card-image img 
+{
     display: block;
-
     width: 100%;
     height: 100%;
-    object-fit: cover;
-
-
-
+    object-fit: contain;
+    display: block;
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-out;
 }
 
-.card-video {
+.card-video 
+{
 
     height: 500px;
     width: 400px;
-
     display: block;
     margin-left: auto;
     margin-right: auto;
-
     margin-top: 50px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     overflow: hidden;
     /* crops the extra content */
 }
 
-.card-video video {
+.card-video video 
+{
 
     display: block;
-
     width: 100%;
     object-fit: cover;
-
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-out;
 }
 
-.card-video:hover video {
+.card-video:hover video 
+{
     transform: scale(1.2);
     transition-duration: 10s;
     transition-timing-function: linear;
 }
 
-.card h2 {
+.card h2 
+{
 
     display: flex;
     align-items: center;
     color: white;
     justify-content: center;
-
     margin-top: 20px;
     margin-bottom: 50px;
-
     font-size: 1.2em;
     /* 120% of the default font size */
 }
 
-.card:hover img {
+.card:hover img 
+{
     transform: scale(1.2);
     transition-duration: 10s;
     transition-timing-function: linear;
 }
 
-.card-image, .card-video {
+.card-image, .card-video 
+{
     height: 450px; /* Adjust height if needed */
     width: 350px; /* Adjust width to keep aspect ratio */
     overflow: hidden;
     margin-top: 0px; /* Reduce margin */
 }
 
+.centered-heading 
+{
+    text-align: center;
+    color: white; /* or any color you want */
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
 /************************************************* CONTAINER *************************************************/
 
-.container {
+.container 
+{
     max-width: 1280px;
     margin: auto;
     min-height: 100%;
@@ -276,15 +294,17 @@ html, body {
 }
 
 /************************************************* GRID LAYOUT *************************************************/
-.row {
+.row 
+{
     display: flex;
     flex-wrap: wrap;
-
-    gap: 50px;
+    gap: 5px;
+    justify-content: space-between;
 }
 
 
-.one-columns {
+.one-columns 
+{
     display: flex;
     flex-direction: column; /* Stack images vertically */
     align-items: center; /* Center content */
@@ -292,60 +312,79 @@ html, body {
     width: 100%; /* Full width */
 }
 
-.one-columns .card {
+.one-columns .card 
+{
     width: 70%; /* Increase the card width */
     max-width: 600px; /* Allow images to be larger */
-    margin-bottom: 20px; /* Reduce space between cards */
+    margin-top: 60px; /* Reduce space between cards */
 }
 
-.one-columns .card-image {
+.one-columns .card-image 
+{
     width: 100%; /* Ensure the image takes up full width */
     max-width: 600px; /* Keep a max width */
     height: auto; /* Maintain aspect ratio */
 }
 
-.one-columns .card img {
+.one-columns .card img 
+{
     width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Removes extra spacing */
     border-radius: 10px; /* Optional: rounded corners for style */
 }
 
-.two-columns .card {
-    width: calc((100% - 50px) / 2);
+.two-columns .card 
+{
+    width: calc(50% - 10px);
 }
 
-.three-columns .card {
+.three-columns .card 
+{
     width: calc((100% - 100px) / 3);
 }
 
-.row .two-columns{
+.row.two-columns
+{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Reduces the spacing between cards */
+    justify-content: space-between;
+    gap: 2px; /* Reduces the spacing between cards */
+    margin: 0 auto;
+    padding: 0;
 }
 
+.row.three-columns 
+{
+    justify-content: center; /* Center the 3 cards inside the row */
+    gap: 2px;
+}
 
+.row.three-columns .card 
+{
+    width: calc((100% - 30px) / 3); /* Decrease the space between each card */
+}
 
 /************************************************* WEBSITE CONTENT *************************************************/
-.main-content {
+.main-content 
+{
     margin-top: 100px;
     overflow-y: auto;
     padding-bottom: 100px;
 }
 
-.content-narrow {
+.content-narrow 
+{
     width: 50%;
     min-width: 640px;
-
     margin: auto;
 }
 
 
 
 /************************************************* WEBSITE FOOTER *************************************************/
-.website-footer {
+.website-footer 
+{
     background-color: #000000;
     padding: 20px;
     flex-direction: column;
@@ -354,13 +393,15 @@ html, body {
     overflow: visible;
 }
 
-.website-footer .container {
+.website-footer .container 
+{
     display: flex;
     flex-wrap: wrap;
 }
 
 
-.website-footer .copyright {
+.website-footer .copyright 
+{
     color: #fff;
     width: 100%;
     margin-top: 50px;
@@ -370,31 +411,30 @@ html, body {
 }
 
 /************************************************* NAVBAR *************************************************/
-.navbar {
+.navbar 
+{
     background-color: #000000;
-
     box-sizing: border-box;
     border-color: #000000;
     border-style: solid;
     border-width: 0;
-
     /* overrides the cleared borders */
 
     border-bottom-width: 1px;
-
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-
     z-index: 1000;
 }
 
-.navbar .container {
+.navbar .container 
+{
     display: flex;
 }
 
-.navbar a {
+.navbar a 
+{
     /* this will add padding to the elements later */
     display: block;
     color: rgb(255, 255, 255);
@@ -541,4 +581,7 @@ html, body {
 .form-element button:hover {
     background-color: #f2ffda; /* Darker shade on hover */
     font-weight: bold; /* Makes text bold on hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform: scale(1.03);
+    font-weight: bold;
 }
