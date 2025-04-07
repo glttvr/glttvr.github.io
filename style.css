@@ -136,7 +136,7 @@ html, body {
 
 .form-elementcommission button {
     justify-content: center;
-    background-color: #fccef2;
+    background-color: #f2ffda;
     font-family: Monsterrat, Arial, sans-serif;
     font-size: 1.5rem; /* Adjust size as needed */
     padding: 10px 50px; /* Adds spacing inside the button */
@@ -158,7 +158,7 @@ html, body {
 }
 
 .form-elementcommission button:hover {
-    background-color: #ffa4eb; /* Darker shade on hover */
+    background-color: #ddff9d; /* Darker shade on hover */
 }
 
 
@@ -416,7 +416,7 @@ html, body {
 .nav-link {
     /* padding: top/bottom left/right */
     padding: 30px 20px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .navbar-brand {
@@ -455,24 +455,27 @@ html, body {
     transition-duration: 0.15s;
 }
 
-.social-icon:hover {
+.social-icon:hover 
+{
     background-color: #000;
 }
 
-.social-icon:hover svg {
+.social-icon:hover svg 
+{
     fill: #fff;
 }
 
 
-.keep-reading {
+.keep-reading 
+{
     background-color: #f3f3f3;
     padding: 50px 50px 0;
 }
 
 /************************************************* FORM *************************************************/
-.website-form {
+.website-form 
+{
     margin-bottom: 100px;
-
     background-position: center;
     margin-top: 200px;
 
@@ -482,9 +485,21 @@ html, body {
     height: 600px;
     width: 300px;
     color: white;
+}
+
+.website-form h2
+{
+    text-align: center;   /* Centers the "Contact Me!" text */
+    font-size: 4rem;      /* Makes the text large */
+    color: white;         /* White text color */
+    font-weight: bold;    /* Makes the text bold */
+    margin-bottom: 30px;  /* Adds space below the text */
 
 
+}
 
+.website-form .form-element {
+    margin-top: 20px;  /* Add some space between form fields */
 }
 
 .form-element {
@@ -516,9 +531,14 @@ html, body {
     font-family: Montserrat, Arial, sans-serif;
     display: block;
     color: rgb(0, 0, 0);
-
     padding: 5px;
-
     margin-right: 10px;
     width: 100px;
+    font-weight: normal;
+    transition: font-weight 0.3s ease, background-color 0.3s ease;
+}
+
+.form-element button:hover {
+    background-color: #f2ffda; /* Darker shade on hover */
+    font-weight: bold; /* Makes text bold on hover */
 }

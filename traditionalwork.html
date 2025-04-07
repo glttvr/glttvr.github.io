@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francesca Abela :: Contact</title>
+    <title>Francesca Abela :: Traditional Work</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,9 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-    
-    <!-- Website Navigation -->
     <nav class="navbar">
         <div class="container">
             
@@ -34,7 +34,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
                 </li>
             </ul>
 
@@ -49,51 +49,47 @@
     
     <!-- MAIN WEBSITE CONTENT -->
     <main class="main-content">
+        <!-- SECTION WITH ROWS -->
+        <section class="portfolio">
+        
+            <div class="row two-columns">
+                <!--CARD-->
+                <a href="TraditionalWorkPage.html" class="card">
 
-<!--CONTACT FORMS WILL NOT WORK WITH PURE HTML & CSS. IN THIS EXAMPLE, WE'RE GOING TO COMPILE AN EMAIL INSTEAD. A FORM REQUIRES LANGUAGES LIKE PHP OR NODE.JS TO BE FULLY FUNCTIONAL.-->
-<form action="mailto:info@mcast.edu.mt"
-        method="post"
-        enctype="text/plain"
-        class="website-form content-narrow" >
-
-        <H2>Contact Me!</H2>
-
-        <div class="form-element">
-            <label for="">Name:</label>
-            <input type="text" name="name" id="name" placeholder="John Smith" required>
-        </div>
-
-        <div class="form-element">
-            <label for="email">Email Address:</label>
-            <input type="email" name="email" id="email" placeholder="me@example.com" required>
-        </div>
-
-        <div class="form-element">
-            <label for="subject">Subject:</label>
-            <select name="subject" id="subject">
-                <option value="Commission Inquiry">Commission Inquiry</option>
-                <option value="Collaborations">Collaborations</option>
-                <option value="Feedback">Feedback</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-
-        <div class="form-element">
-            <textarea name="message" id="message" rows="10" placeholder="Your message here " required></textarea>
-        </div>
-    
-        <div class="form-element">
-            <button type="submit">Send</button>
-            <button type="reset">Reset</button>
-        </div>
-</form>
-
+                    <div class="card-image">
+                        <img src="images/Acrylic.jpeg" alt="traditional work">
+                    </div>
+                    <h2>Traditional Work</h2>
+                </a>
+                        
+                <a href="digitalwork.html" class="card">
+                    <div class="card-image">
+                        <img src="images/nature.jpg" alt="Digital Work">
+                    </div>
+                    <h2>Digital Work</h2>
+                </a>
+            </div>
+            
+            <div class="row two-columns">
+                <!--CARD-->
+                <a href="IllustrationPage.html" class="card">
+                    <div class="card-image">
+                        <img src="images/Book_Cover.jpg" alt="book cover">
+                    </div>
+                    <h2>Illustrations</h2>
+                </a>
+                
+                <a href="AnimationPage.html" class="card">
+                    <div class="card-video">
+                        <video src="images/wishful thinking (1).mp4" alt="wishful thinking"> </video>
+                    </div>
+                    <h2>Animation</h2>
+                </a>
+            </div>
+        </section>
     </main>
-
-    </div>
-
 </body>
-
+        
 <!-- WEBSITE FOOTER -->
 <footer class="website-footer">
     <div class="container">
@@ -102,5 +98,4 @@
         </p>
     </div>
 </footer>
-
 </html>
